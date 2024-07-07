@@ -1,12 +1,13 @@
 *{
     padding: 0;
     margin: 0;
+    font-family: "Poppins", sans-serif;
 }
 
 .header{
     min-height: 100vh;
     width: 100%;
-    background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url(images/bannerbooks.png);
+    background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url(images/read2class.png);
     background-position: center;
     background-size: cover;
     position: relative;
@@ -18,7 +19,7 @@ nav{
     align-items: center;
 }
 nav img{
-    width: 150px;
+    width: 100px;
 
 }
 .nav-links{
@@ -35,4 +36,50 @@ nav img{
     color: #fff;
     text-decoration: none;
     font-size: 13px;
+}
+.nav-links ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #1aabbc;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.nav-links ul li:hover::after{
+    width: 100%;
+}
+.text-box{
+    width: 90%;
+    color: #ffff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center; 
+
+}
+.text-box h1{
+    font-size: 62px;
+}
+.text-box p{
+    margin: 10px 0 40px;
+    font-size: 14px;
+    color: #ffff;
+}
+.hero-btn{
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 12px 34px;
+    font-size: 13px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+}
+.hero-btn:hover{
+    border: 1px solid #1aabbc;
+    background: #1aabbc;
+    transition-duration: 1s;
 }
